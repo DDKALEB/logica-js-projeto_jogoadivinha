@@ -1,12 +1,13 @@
 alert('Boas Vindas ao Jogo do Numero Secreto');
-let numeroScreto = 5;
+let numeroMaximo = 5000;
+let numeroScreto = parseInt(Math.random() * numeroMaximo + 1);
 console.log(numeroScreto);
 let chute;
 let tentativas = 1;
 
 //enquanto = while, chute não for igual a Num Secreto continue tentando
 while (chute != numeroScreto) {
-  chute = prompt(' Escolha um Numero entre 1 e 10');
+  chute = prompt(`Escolha um Numero entre 1 e ${numeroMaximo}`);
   if (chute == numeroScreto) {
     //QUERO parar o While se chute for igual
     break;

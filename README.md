@@ -1,5 +1,8 @@
 # logica-js-projeto_jogoadivinha
 
+Nesta versão agora, otimizada com numero de 1 a 500...
+
+
 Inclusão de Operadores Ternario.
 https://www.alura.com.br/artigos/o-que-e-o-operador-ternario
 
