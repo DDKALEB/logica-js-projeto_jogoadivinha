@@ -8,9 +8,8 @@ let tentativas = 1;
 while (chute != numeroScreto) {
   chute = prompt(' Escolha um Numero entre 1 e 10');
   if (chute == numeroScreto) {
-    alert(
-      `O Número secreto é: ${numeroScreto} vc descobriu com ${tentativas} tentativas`
-    );
+    //QUERO parar o While se chute for igual
+    break;
   } else {
     if (chute > numeroScreto) {
       alert(`O numero Secteto é menor que o ${chute}`);
@@ -24,3 +23,26 @@ while (chute != numeroScreto) {
     tentativas++;
   }
 }
+
+// Operador ternario
+// Caso tentativas seja maior que 1, '?' escreva/use tentativas, caso contrario ':' use tentativa.
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+alert(
+  `Isso ai! Você descobriu o numero Secreto ${numeroScreto} com ${tentativas} ${palavraTentativa}.`
+);
+/*
+if (tentativas > 1) {
+  alert(
+    `Isso ai! Você descobriu o numero Secreto ${numeroScreto} com ${tentativas} tentativas.`
+  );
+} else {
+  alert(
+    `Isso ai! Você descobriu o numero Secreto ${numeroScreto} com ${tentativas} tentativa.`
+  );
+}
+*/
+
+/*alert(
+  `O Número secreto é: ${numeroScreto} vc descobriu com ${tentativas} tentativas`
+);
+*/
